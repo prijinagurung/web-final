@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prijina Gurung</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Space+Grotesk:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+<div class="shape circle"></div>
+<div class="shape square"></div>
+<div class="shape triangle"></div>
+
+<nav class="sidebar">
+<div class="logo">PG</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#resume">Resume</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<button id="theme-toggle">🌙</button>
+</nav>
+
+<main>
+
+<section id="home" class="hero">
+
+<!-- clocks top corners -->
+<div class="corner-clock left-clock">
+<h4>Nepal Time</h4>
+<div id="nepal-clock">00:00:00</div>
+<small id="nepal-date"></small>
+</div>
+
+<div class="corner-clock right-clock">
+<h4>Your Time</h4>
+<div id="local-clock">00:00:00</div>
+<small id="local-date"></small>
+</div>
+
+<div class="hero-content">
+<p class="tag">Hello, I'm</p>
+<h1>Prijina <span>Gurung</span></h1>
+<p class="subtitle">Computer Science Student · Video Editor · Avid Reader</p>
+
+<div class="hero-btns">
+<a href="#projects" class="btn primary">Projects</a>
+<a href="#contact" class="btn outline">Contact</a>
+</div>
+</div>
+
+<hr>
+
+<svg class="hero-svg" viewBox="0 0 400 400">
+<circle cx="200" cy="200" r="160"/>
+</svg>
+
+</section>
+
+<section id="about" class="section">
+<h2>About Me</h2>
+
+<div class="about-grid">
+<img src="./images/me.jpg">
+
+<div>
+<p>
+I’m a second-year Computer Science student passionate about solving real-world problems through code. I am also
+active in reading, painting, and crocheting. I have also been honing my skills in Video Editing through my work.
+</p>
+
+<div class="skills stacked">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>C</span>
+<span>C++</span>
+<span>Final Cut Pro</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="projects" class="section alt">
+<h2>Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Created this website as a Project</p>
+<a href="#" class="btn primary small">View Project</a>
+</div>
+
+<div class="card">
+<h3>Crochet Stitch and Project Tracker</h3>
+<p>Created a C++ tracker for fibre-related projects</p>
+<a href="#" class="btn primary small">View Project</a>
+</div>
+
+<div class="card">
+<h3>Sorting Visualizer</h3>
+<p>Created a C quiz game</p>
+<a href="#" class="btn primary small">View Project</a>
+</div>
+
+</div>
+</section>
+
+
+<section id="resume" class="section">
+<h2>Resume</h2>
+
+<div class="resume-box">
+<embed src="./images/resume.pdf">
+
+<a href="images/resume.pdf" download class="btn primary" target="_blank">
+Download Resume
+</a>
+</div>
+</section>
+
+<section id="contact" class="section alt">
+<h2>Contact Me</h2>
+
+<form class="contact-form"
+action="https://api.web3forms.com/submit"
+method="POST">
+
+<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<input type="text" name="subject" placeholder="Subject">
+<textarea name="message" placeholder="Message..." required></textarea>
+
+<button type="submit" class="btn primary">Send Message</button>
+</form>
+</section>
+
+<footer>
+<span id="year"></span> - Prijina Gurung
+</footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
